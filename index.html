@@ -1,30 +1,77 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang=en>
     <head>
-        <title>tmail.com.de - Email</title>
+        <title>tmail.com.de &mdash; Email, Cloud Storage, Contacts, & Calendar</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="favicons/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
+        <link rel="apple-touch-icon" href="favicons/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="favicons/favicon-144.png">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <!-- Matomo -->
+        <script type="text/javascript">
+            var _paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://analytics.sugaryweb.com/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '9']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript><p><img src="https://analytics.sugaryweb.com/matomo.php?idsite=9&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+        <!-- End Matomo Code -->  
     </head>
     <body>
-        <div class="top">
-            <span style="float:left;"><a href="https://tmail.com.de"><image src="tmail.com.de.png" style="height: 20px;"></image>tmail.com.de</a></span>
-            <span style="float:right"><a href="https://tmail.com.de/mail">Sign In</a></span>
-            <p></p>
-        </div>
-        <div class="sub-top">
-            <a href="">Cloud</a>
-            <a href="">Contacts</a>
-            <a href="">Calendar</a>
-        </div>
-        <div class="banner">
-            <h1>tmail.com.de</h1>
-        </div>
-
-        <div class="card">
-            <h1>Checking and Sending Mail</h1>
-            <h2>Webmail</h2>
-            <p>You can simply access your email by signing in <a href="https://tmail.com.de/mail">here</a>. Your username is your whole email address.</p>
-            <h2>Mobile/Desktop Email Clients</h2>
-            <h3>Automatic Configuration</h3>
+        <img src="tmail.com.de-banner.png">
+        <nav class="nav-links">
+            <a href="https://tmail.com.de/mail/">Webmail</a>
+            <a href="https://tmail.com.de/cloud/">Cloud</a>
+            <a href="https://tmail.com.de/cloud/contacts">Contacts</a>
+            <a href="https://tmail.com.de/cloud/calendar">Calendar</a>
+        </nav>
+        <div class="body-text">
+            <div>
+                <h1>Welcome!</h1>
+                <p>Welcome to tmail.com.de! tmail.com.de is a simple, but effective host for email, cloud storage, contacts, and calendar. The site uses 
+                    <a href="https://mailinabox.email/">Mail-in-a-Box</a> for the software behind our services. Webmail is powered by Roundcube while the rest 
+                    of our services are powered by Nextcloud. 
+                </p>
+            </div>
+            <div>
+                <h1>Services</h1>
+                <p>We offer email (IMAP/SMTP/POP/Webmail), cloud storage, contacts, and calendar.</p>
+            </div>
+            <div>
+                <h1>How do I get an account?</h1>
+                <p>Currently, tmail.com.de is invite only. However, if you are interested in our services, including email (@tmail.com.de or @yourdomain.tld), 
+                    you can get in touch <a href="mailto:contact@tmail.com.de">here</a> so that we can discuss specifics.
+            </div>
+            <div>
+                <h1>Instructions</h1>
+                <h2>Mobile/Desktop Email Clients</h2>
+                <h3>Automatic Configuration</h3>
             <p>For iOS and MacOS, you can open <a href="https://tmail.com.de/mailinabox.mobileconfig">this configuration link</a> to automatically set up email, 
             contacts, and calendar. Your username is your entire email address.</p>
             <h3>Manual Configuration</h3>
@@ -69,9 +116,7 @@
             </table>
             <p>As an alternative to IMAP you can also use the POP protocol: choose POP as the protocol, port 995, and SSL or TLS security in your mail client. 
                 The SMTP settings and usernames and passwords remain the same. However, we recommend you use IMAP instead.</p>
-        </div>
-        <div class="card">
-            <h1>Contacts & Calendar</h1>
+            <h2>Contacts & Calendar</h2>
             <p>In addition to hosting your email, tmail.com.de also provides contacts and calendar support.</p>
             <table>
                 <tr>
@@ -110,28 +155,25 @@
                     <td>Your email password.</td>
                 </tr>
             </table>
-        </div>
-        <div class="card">
-            <h1>Mobile Apps</h1>
-            <h2>For Email:</h2>
+            <h2>Mobile Apps</h2>
+            <h3>For Email:</h3>
             <ul>
                 <li>Spark - <a href="https://itunes.apple.com/us/app/spark-email-app-by-readdle/id997102246?mt=8">iOS</a> and 
                     <a href="https://play.google.com/store/apps/details?id=com.readdle.spark">Android</a></li>
                 <li>K9-Mail - <a href="https://play.google.com/store/apps/details?id=com.fsck.k9">Android</a></li>
                 <li>Thunderbird - MacOS, Windows, and Linux (Downloads can be found <a href="https://www.thunderbird.net/en-US/thunderbird/all/">here</a>).</li>
             </ul>
-            <h2>For Contacts/Calendar</h2>
+            <h3>For Contacts/Calendar:</h3>
             <ul>
                 <li>DAVdroid - Contacts and Calendar - <a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid">Android</a> ($4.69) and 
                 <a href="https://f-droid.org/packages/at.bitfire.davdroid/">F-Droid</a> (free).</li>
                 <li>CardDAV-Sync Free - Contacts - <a href="https://play.google.com/store/apps/details?id=org.dmfs.carddav.sync">Android</a></li>
                 <li>CalDAV-Sync - Calendar - <a href="https://play.google.com/store/apps/details?id=org.dmfs.caldav.lib">Android</a> ($2.99).</li>
             </ul>
+            </div>
+            <footer>
+                <p>&copy 2019 <a href="https://tmail.com.de">tmail.com.de</a>, a <a href="https://tgoodell.com">Tristan Goodell</a> Site</p>
+            </footer>
         </div>
     </body>
-    <footer>
-        <div class="cool-footer">
-            &copy 2019 tmail.com.de, a <a href="https://tgoodell.com">Tristan Goodell</a> Website
-        </div>
-    </footer>
 </html>
