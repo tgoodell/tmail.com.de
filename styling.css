@@ -3,6 +3,10 @@
     line-height: 20px;
 }
 
+img  {
+    width: 300px;
+}
+
 a {
     color: #2b59c3;
     transition: 0.5s;
@@ -84,5 +88,11 @@ footer a {
 @media (max-width: 874px) {
     body {
         width: auto;
+    }
+}
+
+@media (max-width: 316px) {
+    img {
+        width: 100%;
     }
 }
